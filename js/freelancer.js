@@ -23,8 +23,9 @@ function main(){
         $("section").hide();
     });
     
-    if("width"<=619px){
-        alert("holaaa");
+    var wSize = $(window).width();
+
+    if(wSize<=619){
        $(".main-menu").removeClass(pull-right);
     }
     else{

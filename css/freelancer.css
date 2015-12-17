@@ -180,6 +180,17 @@ h1,.logo{
 
 @media (max-width:619px){
     .main-menu{
+        width: 100%;
         float: left !important;
+    }
+    .menu{
+        padding-left: 10px;
+    }
+    .logo{ width: 100%; text-align: center}
+    .banner h1{
+        font-size: 40px;
+    }
+    .banner h3{
+        line-height: 1.5;
     }
 }
