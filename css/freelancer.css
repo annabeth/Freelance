@@ -2,8 +2,8 @@
 /* estilos comunes */
 
 body{
-  /*font-family: "Montserrat",sans-serif;*/
-  font-family: "Lato", sans-serif;
+  font-family: "Montserrat",sans-serif;
+  /*font-family: "Lato", sans-serif;*/
 }
 img{
   max-width: 100%;
@@ -34,7 +34,7 @@ h1,.logo{
   padding: 20px 0;
 }
 .header,.banner,.about, .footer{color: white;}
-/* menu */
+/*** menu ****/
 .menu{
   margin-top:10px;
 }
@@ -49,14 +49,15 @@ h1,.logo{
   padding: 12px 8px;
   width: 100%;
   color: white;
+  transition: all 1s ease;
 }
-.menu li>a:hover{
+.menu li>a:hover,.active{
   background: black;
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 /* banner */
 .banner, .about{
-  background: rgba(25, 132, 122, 0.67);
+  background:#18BC9C;
 }
 .banner h1{
   font-size: 60px;
@@ -128,7 +129,7 @@ h1,.logo{
 .footer .icon{
   border: 1px solid white;
   border-radius: 100%;
-  padding: 2px 8px 8px 8px;
+  padding: 5px 10px;
   margin: 20px 5px;
   display: inline-block;
 }
@@ -137,9 +138,9 @@ h1,.logo{
   font-weight: normal;
 }
 
-.footer .icon>img{
+.footer .icon>i{
   padding: 0;
-  vertical-align: middle;
+  /*vertical-align: middle;*/
 
 }
 .copyright{
@@ -147,11 +148,38 @@ h1,.logo{
   font-size: 11px;
   background:rgba(36, 53, 78, 1);
 }
-/**ABOUT.html**/
+/**====ABOUT.html===**/
 .main-content{
   margin: 80px auto;
 }
 .main-content h4{ font-weight: bold}
 .main-content .row{
   margin: 0 80px 50px 80px ;
+}
+
+/**====BLOG.html===**/
+.row.r-blog{
+    
+    margin: 5% 10%;
+}
+.r-blog h1{
+    color: #18BC9C;
+    text-transform: uppercase;
+    font-size: 700;
+    font-family: 'Lato',sans-serif;
+}
+.r-blog .col-md-12{
+    margin-bottom: 5%;
+}
+.r-blog p{
+    line-height: 1.5;
+}
+
+
+/*=========MEDIA QUERIES============*/
+
+@media (max-width:619px){
+    .main-menu{
+        float: left !important;
+    }
 }
